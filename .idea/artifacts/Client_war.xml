@@ -1,8 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="war" name="Client:war">
     <output-path>$PROJECT_DIR$/out/artifacts/Client_war</output-path>
-    <root id="archive" name="Client_war.war">
+    <root id="archive" name="Client.war">
       <element id="artifact" artifact-name="Client:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../lib/json-20140107.jar" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
